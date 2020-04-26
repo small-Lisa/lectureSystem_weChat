@@ -1,0 +1,15 @@
+<!--pages/lectureDetail/lectureDetail.wxml-->
+<view class="title">讲座详情</view>
+<text>\n</text>
+<text>\n</text>
+<text>\n</text>
+<view class="kuang">
+<view>讲座名称:<text class="datashow">职业生涯规划之精算师</text></view>
+<view>讲座时间:<text class="datashow">2019/12/02 14:30</text></view>
+<view>主要内容:<text class="datashow">如何成为一个精算师</text></view>
+<view>主要面向班级:<text class="datashow">17信息 18信息 19信息</text></view>
+<view>本班名额分配:<text class="datashow">5</text></view>
+<view>申请截止时间:<text class="datashow">2019/12/01 12:30</text></view>
+<view>直接报名截止时间:<text class="datashow">2019/12/02 12:30</text></view>
+</view>
+<!--讲座名称 讲座时间 主要内容 主要面向班级 本班名额分配 申请截止时间 直接报名截止时间-->

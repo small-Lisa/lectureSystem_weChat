@@ -1,0 +1,37 @@
+<!-- 幻灯片部分 -->
+<swiper indicator-dots="true" autoplay="true" interval="5000"duration="500">
+  <view>
+    <swiper-item wx:for="{{swiperImg}}" wx:key="swiper{{index}}">
+      <image src="{{item.src}}"></image>
+    </swiper-item>
+  </view>
+</swiper>
+<!-- 讲座规则 -->
+<view class="lookRule">
+  <navigator url="/pages/rule/rule">
+    <view> ? 学分讲座规则说明</view>
+  </navigator>
+</view>
+<!-- 讲座浏览 -->
+<view class="tou">
+  <view>讲座</view>
+  <view>状态</view>
+</view>
+<view class="lookLec" wx:for="{{lecList}}" wx:key="{{item.lecName}}">
+  <view class="lecMess">
+    <navigator url="/pages/lectureDetail/lectureDetail">
+      <view style="color:rgb(48, 75, 152);">{{item.lecName}}</view>
+    </navigator>
+    <view>
+      <text>{{item.lecTime}}</text>
+    </view>
+  </view>
+  <view class="stateMess">
+    <view wx:if="{{item.lecState=='一轮申请' || item.lecState=='二轮申请'}}">
+      <button bindtap="askAgain_apply" style="background-color:green;">{{item.lecState}}      </button>
+    </view>
+    <view wx:elif="{{item.lecState=='不可申请' || item.lecState=='已过期'}}">
+      <button bindtap="askAgain_apply" style="background-color:white;">{{item.lecState}}      </button>
+    </view>
+  </view>
+</view>

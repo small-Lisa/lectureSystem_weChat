@@ -1,0 +1,7 @@
+/* pages/lectureDetail/lectureDetail.wxss */
+.datashow{
+  color: #304B98;
+}
+.kuang{
+  background-color: #E2EDF4;
+}

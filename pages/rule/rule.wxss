@@ -1,0 +1,23 @@
+.tou{
+  font-family: 微软雅黑;
+  font-weight:bold;
+  font-size: 40rpx;
+  margin:45rpx 0rpx 45rpx 0rpx;
+  display: flex;
+  justify-content: center; 
+}
+.back{
+  background-color:rgb(226, 237, 244);
+  padding: 10% 10% 10% 10%;
+}
+.box{
+  height:auto;
+  padding: 2% 5% 0% 5%;
+  background-color: white;
+  display: flex;
+  justify-content:column;
+  flex-wrap: wrap;
+  /* border-left: 2rpx solid; */
+  font-family: 楷体;
+  font-size: 30rpx;
+}

@@ -1,0 +1,9 @@
+<view class="tou">
+  <text>学分讲座规则说明</text>
+</view>
+<view class="back">
+  <view class="box" wx:for="{{ruleList}}" wx:key="{{item.num}}">
+    <text style="color:rgb(48, 75, 152);"> {{item.num}}. </text>
+    <text>{{item.neirong}}；</text>
+  </view>
+</view>

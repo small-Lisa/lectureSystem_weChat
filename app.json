@@ -1,0 +1,35 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/personalPage/personalPage",
+    "pages/rule/rule",       
+    "pages/applyResult/applyResult",
+    "pages/lectureDetail/lectureDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "深大数院学分讲座系统",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#328EEB",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "/images/index.png",
+        "selectedIconPath": "/images/index.png"
+      },
+      {
+        "pagePath": "pages/personalPage/personalPage",
+        "text": "个人中心",
+        "iconPath": "/images/my.png",
+        "selectedIconPath": "/images/my.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

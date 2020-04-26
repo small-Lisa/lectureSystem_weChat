@@ -1,0 +1,52 @@
+<view class="tou">
+  <text>申请结果</text>
+</view>
+<view class="back">
+<!-- <view wx:for="{{lecList}}" wx:key="{{item.lecName}}"> -->
+
+  <!-- 审核中 -->
+  <view wx:if="{{num=='1'}}">
+    <view class="box">
+      <view><text style="color:rgb(48, 75, 152);font-weight:bold;font-size:40rpx;">
+      等待“抽奖”结果中...
+      </text></view>
+      <view>
+        <text>讲座名称：{{}}</text>
+        <text>一轮申请结束时间：{{}}</text>
+      </view>
+    </view>
+    <view>
+      <button bindtap="askAgain_noapply">取消申请</button>
+    </view>
+  </view>
+  <!-- 已出结果 中奖-->
+  <view wx:elif="{{num=='2'}}">
+    <view class="box">
+      <view><text style="color:rgb(48, 75, 152);font-weight:bold;font-size:40rpx;">
+      已中奖...
+      </text></view>
+      <view>
+        <text>讲座名称：{{}}</text>
+        <text>一轮申请结束时间：{{}}</text>
+        <text style="font-size:45rpx;color:red;">请提前到场找工作人员扫码签到！</text>
+      </view>
+    </view>
+    <view>
+      <button bindtap="signUp">签到</button>
+    </view>
+  </view>
+  <!-- 已出结果 未中奖-->
+  <view wx:elif="{{num=='3'}}">
+    <view class="box">
+      <view><text style="color:rgb(48, 75, 152);font-weight:bold;font-size:40rpx;">
+      未中奖...
+      </text></view>
+      <view>
+        <text>讲座名称：{{}}</text>
+        <text>一轮申请结束时间：{{}}</text>
+      </view>
+    </view>
+  </view>
+
+<!-- </view> -->
+</view>
